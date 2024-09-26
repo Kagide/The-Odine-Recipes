@@ -12,10 +12,8 @@ body {
         "footer footer footer";
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: auto 1fr auto;
-    gap: 20px; /* Space between grid items */
-    padding: 20px;
+    gap: 20px; /* Space b*/
 }
-
 .nav {
     grid-area: nav;
     background-color: #4CAF50;
@@ -75,7 +73,7 @@ img {
 
 /* Optional styling for links */
 a {
-    color: white;
+    color: rgb(38, 110, 106);
     text-decoration: none;
     font-weight: bold;
     
@@ -84,4 +82,54 @@ a {
 a:hover {
     text-decoration: none;
     color: rgb(105, 70, 84);
+}
+.conquer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "image image"
+        "ingredients steps"
+        "backhome backhome"
+        "footer footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    grid-area: image;
+}
+
+.backhome {
+    grid-area: backhome;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingredients {
+    grid-area: ingredients;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.steps {
+    grid-area: steps;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
