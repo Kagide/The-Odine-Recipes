@@ -83,7 +83,7 @@ a:hover {
     text-decoration: none;
     color: rgb(105, 70, 84);
 }
-.conquer {
+.conquer,.lasagna ,.salas{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
